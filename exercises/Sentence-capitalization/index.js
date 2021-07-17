@@ -8,15 +8,14 @@
 //   capitalize('look, it is working!') --> 'Look, It Is Working!'
 
 function capitalize(sentence) {
+  //first we declare an empty array
+  let words = [];
+  //we iterate throug every word after transforming it into an array withe the help of split
+  for (let word of sentence.split(" ")) {
+    words.push(word[0].toUpperCase() + word.slice(1));
+  }
 
-   //first we declare an empty array
-   let words = [];
-    //we iterate throug every word after transforming it into an array withe the help of split
-    for(let word of sentence.split(' ')){
-        words.push(word[0].toUpperCase()+word.slice(1))
-    }
-    return words.join(' ')
-  
+  return words.join(' ')
 }
 
-console.log(capitalize('look, it is working!'));
+console.log(capitalize("look, it is working!"));
