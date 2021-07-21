@@ -18,22 +18,25 @@
 //       '####'
 
 function steps(int) {
-  //itreate through rows
-  for (let row = 0; row < int; row++) {
-    let stair = "";
-    //itreate through columns
-    for (let column = 0; column < int; column++) {
-      //check if current column is greater or less than current row
-      if (column <= row) {
-        stair += "#";
-      } else {
-        stair += " ";
+ 
+  for(let row =0; row< int; row++){
+    let stair = ""
+    for(let column =0; column< int; column++){
+      if(column <= row){
+        stair += "#"
+      }else{
+        stair+= " "
       }
     }
     console.log(stair);
   }
-
- 
 }
 
-console.log(steps(6));
+steps(9)
+
+
+
+
+
+// Code une fonction pour trouver le maximum du tableau t, sans utiliser de fonction "max".
+// Code une fonction, dans le langage de ton choix, qui détermine s’il existe 3 entiers dans le tableau T dont le produit fait 30. js
